@@ -7,7 +7,7 @@ namespace AzureCacheforRedisApp.Services.Implementations
         private readonly IFileService _fileService;
         private ILogger<FileServiceProxy> _logger;
         private const string _key = "linesCityFile";
-        private TimeSpan _absolutTimeToExpire = TimeSpan.FromSeconds(10);
+        private TimeSpan _absolutTimeToExpire = TimeSpan.FromSeconds(60);
 
         public FileServiceProxy(ICacheService cacheService, ILogger<FileServiceProxy> logger)
         {
