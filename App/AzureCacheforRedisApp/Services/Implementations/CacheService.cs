@@ -7,7 +7,7 @@ namespace AzureCacheforRedisApp.Services.Implementations
     public class CacheService : ICacheService
     {
         private readonly  IDistributedCache _cache;
-        private const int _secondsToExpire = 60;
+        
         public CacheService(IDistributedCache cache)
         {
             _cache = cache;
